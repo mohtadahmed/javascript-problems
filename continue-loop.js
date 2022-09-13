@@ -16,10 +16,23 @@
 var bookPrices = [114, 70, 240, 410, 120, 140, 155, 350, 175, 198, 270];
 var price = 0;
 
+//  Using While Loop
 
 while(price < bookPrices.length){
     if((bookPrices[price]) < 200){
         console.log(bookPrices[price]);
     }
     price++;
+}
+
+
+// Using For Loop
+
+for (let i = 0; i < bookPrices.length; i++) {
+    if(bookPrices[i] > 200){
+        continue;
+    }
+    else{
+        console.log(bookPrices[i]);
+    }
 }
